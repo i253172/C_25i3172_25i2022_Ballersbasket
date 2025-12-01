@@ -247,21 +247,25 @@ footer .copyright {
 .design 
 {
     box-sizing: border-box;
-    font-size: 250px;
+    
     font-weight: bolder;
     font-family:Alfa Slab One;
     letter-spacing: -7px ;
     line-height: 0.9 ;
-    background: url(basketballbackground.png) 50% 50%;
+    background: url('images/basketballbackground.png') 50% 50%;
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip:text;
 
-     position: absolute;
-     top: 16%;
-    left: 10%;
-    transform: translate(-10%, -50%);
+     position: relative;
+     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
         text-align: center;
+        margin-top: 40px;
+}
+.design .text{
+  font-size: 150px;
 }
 
 /*===========================all by us==========================*/
@@ -269,7 +273,8 @@ footer .copyright {
 {
     position: relative;
     text-align: center;
-    margin-top: 450px;
+    font-size: 30px;
+    
 }
 
 main{
@@ -294,19 +299,19 @@ main{
 content:"";
 display:table;
 clear:both;
+margin-top: 10px;
 }
 
 .text
 {
-    top: 60px;
-    left:50%;
+    
     
 
 color: white;
 
 font-size: 40px;
 text-align:center;
-margin-top: 20%;
+margin-top: 10px;
 
 z-index: 10;/*bringing to front*/
 
@@ -460,4 +465,3 @@ color: #caffb6;
     display: flex;
     flex-direction: column;
 }
-
