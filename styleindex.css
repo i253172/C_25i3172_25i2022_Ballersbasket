@@ -1,0 +1,228 @@
+body {
+  background-color: rgb(135, 120, 115);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/*=====================header================================================*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* controls left right axis */
+  align-items: center;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  gap: 25px;
+  display: flex;
+  align-items: center; /*controls top bottom axis*/
+}
+.navbar li {
+  white-space: nowrap; /* about us doesnt split up*/
+  padding: 5px;
+}
+
+.navbar li a {
+  color: #ff7f01;
+  font-family: irish grover;
+  text-decoration: none;
+}
+
+.left {
+  display: flex; /*line up items auto*/
+  gap: 25px;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.right img /*targets all img in right container so changes size of icons*/ {
+  height: 32px;
+}
+.logo {
+  height: 40px;
+  margin-left: 0;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .navbar ul {
+    gap: 15px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left {
+    flex-direction: column;
+    padding-left: 0;
+    gap: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 10px;
+    margin-right: 0;
+  }
+
+  .right img {
+    height: 28px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .navbar li a {
+    font-size: 14px;
+  }
+
+  .right img {
+    height: 24px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+}
+/*=====================footer================================================*/
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  height: 150px;
+  width: 100%;
+  color: #ff7f01;
+  font-family: irish grover;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.foot-left {
+  color: #ff7f01;
+  font-family: irish grover;
+  text-decoration: none;
+  text-align: left;
+}
+.foot-right {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+.foot-right a {
+  color: #ff7f01;
+  font-family: irish grover;
+  text-decoration: none;
+  text-align: right;
+}
+footer .copyright {
+  color: #ff7f01;
+  font-family: irish grover;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footlogo img {
+  height: 90px;
+  width: auto;
+}
+.footlogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Styling for select inputs and text inputs to look distinct */
+.form-select, .form-control {
+    background-color: #F8F7F3; /* Very light background for inputs */
+    border: 1px solid #707070;
+    font-size: 0.9rem;
+}
+
+/* Style for the dark "Apply Filters" button */
+.btn-dark {
+    background-color: #000!important;
+    border-color: #000!important;
+    font-weight: 500;
+}
+
+/* ===================================== */
+/* 3. Product Card Styling */
+/* ===================================== */
+
+.product-card {
+    background-color: #D3CDBF; /* Matches the sidebar background */
+    padding: 10px;
+    border-radius: 8px; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+    cursor: pointer; 
+    /* Subtle shadow for a lifted effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    padding: 5px 0;
+    margin-top: auto; /* Pushes the details to the bottom */
+}
+
+.product-title {
+    font-weight: 700; /* Bold title */
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.rating {
+    /* Star color from the design (Yellow/Gold) */
+    color: #FFC107; 
+    font-size: 1.1rem;
+}
+
+/* ===================================== */
+/* 4. AI Disclosure Tag (Phase 3 Requirement) */
+/* ===================================== */
+
+
+/* ===================================== */
+/* 5. Responsive Adjustments (Phase 4) */
+/* ===================================== */
+
+/* Applies only on smaller screens (below 992px, where the columns stack) */
+@media (max-width: 991.98px) {
+    aside.col-lg-3 {
+        /* Adds space below the filter sidebar when it's stacked above the products */
+        margin-bottom: 20px; 
+    }
+}

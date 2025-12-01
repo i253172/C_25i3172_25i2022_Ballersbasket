@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="css/checkout_style.css">
+    
+    
+</head>
+
+<body class="bg-gray-100 p-6 flex justify-center items-center min-h-screen">
+
+    <div class="bg-white w-full max-w-4xl rounded-lg shadow-lg overflow-hidden">
+
+        <div class="md:flex">
+
+            <!-- Left Section -->
+            <div class="md:w-3/5 p-6 bg-gray-50 space-y-6">
+
+                <h1 class="text-xl font-bold border-b pb-2">Checkout Details</h1>
+
+                <!-- Shipping Info -->
+                <div class="space-y-4">
+                    <h2 class="text-lg font-semibold">1. Shipping Address</h2>
+
+                    <div>
+                        <label class="text-sm">Full Name</label>
+                        <input class="mt-1 w-full p-2 border rounded" placeholder="Aishmal Niazi" required>
+                    </div>
+
+                    <div>
+                        <label class="text-sm">Address</label>
+                        <input class="mt-1 w-full p-2 border rounded" placeholder="xyz street" required>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-sm">City</label>
+                            <input class="mt-1 w-full p-2 border rounded" placeholder="Islamabad" required>
+                        </div>
+                        <div>
+                            <label class="text-sm">Postal Code</label>
+                            <input class="mt-1 w-full p-2 border rounded" placeholder="00000" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment -->
+                <div class="space-y-3 pt-4 border-t">
+                    <h2 class="text-lg font-semibold">2. Payment Method</h2>
+
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="payment" checked>
+                        <span>Credit / Debit Card</span>
+                    </label>
+
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="payment">
+                        <span>Cash on Delivery (COD)</span>
+                    </label>
+                </div>
+
+                <button class="w-full mt-6 bg-blue-600 text-white p-3 rounded font-semibold hover:bg-blue-700">
+                    Place Order (Rs 1750)
+                </button>
+            </div>
+
+            <!-- Right Section -->
+            <div class="md:w-2/5 p-6 border-l">
+
+                <h2 class="text-lg font-bold border-b pb-2 mb-4">Order Summary</h2>
+
+                <div class="flex items-center space-x-3 border-b pb-3 mb-4">
+                    <img src="cover.png" class="w-16 h-16 rounded">
+                    <div class="flex-grow">
+                        <p class="font-semibold">Dunk Proof Basketball</p>
+                        <p class="text-sm text-gray-500">Qty: 1</p>
+                    </div>
+                    <p class="font-semibold">Rs 1500</p>
+                </div>
+
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <span>Subtotal</span>
+                        <span>Rs 1500</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Shipping</span>
+                        <span>Rs 250</span>
+                    </div>
+                    <div class="flex justify-between border-t pt-3 text-lg font-bold">
+                        <span>Total</span>
+                        <span>Rs 1750</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

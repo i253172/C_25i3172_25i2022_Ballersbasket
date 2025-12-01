@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #d3d3d3;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main layout */
+.container {
+    display: flex;
+    background: white;
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Left Section */
+.left {
+    width: 60%;
+    background: #7a6a63;
+    padding: 25px;
+}
+
+.left h1,
+.left h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Inputs */
+.left input,
+.left select {
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Two fields in one line */
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+/* Payment boxes */
+.payment-box {
+    background: white;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Button */
+.order-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #006fe6;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Right Section */
+.right {
+    width: 40%;
+    background: #e3e3e3;
+    padding: 25px;
+}
+
+/* Product line */
+.product {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.product img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+}
+
+/* Totals */
+.line {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.total {
+    font-weight: bold;
+    border-top: 1px solid #bbb;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* Apply button */
+.apply {
+    background: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 15px 0;
+}

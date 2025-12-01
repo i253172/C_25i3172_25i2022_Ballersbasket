@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Baller's Basket</title>
+    
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="contact-body"> 
+    
+    
+    <header>
+        <nav class="navbar">
+   
+    <div class="left" >
+        <a href="homepage.html"> <img class="logo" src="images/logo.png"></a>
+
+        <ul >
+        <li><a href="">about us</a></li>
+        <li><a href="">Sell</a></li>
+        <li><a href="">Accessories</a></li>
+        <li><a href="">Equipment</a></li>
+        <li><a href="">Jerseys</a></li>
+        </ul>
+    </div>
+    </header>
+     
+    <main class="flex-grow-1 d-flex align-items-center justify-content-center">
+        <div class="contact-form-container p-4 p-md-5 rounded shadow">
+            <h2 class="text-center mb-1">Contact Us</h2>
+            <p class="text-center mb-4 subtitle">You can reach us anytime</p>
+
+            <form>
+                <div class="row mb-3">
+                    <!-- First Name -->
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="firstName" class="form-label visually-hidden">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+                    <!-- Last Name -->
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label visually-hidden">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <!-- Email -->
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="email" class="form-label visually-hidden">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <!-- Phone Number -->
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label visually-hidden">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Phone number">
+                    </div>
+                </div>
+
+                <!-- Query Text Area -->
+                <div class="mb-4">
+                    <label for="query" class="form-label">How can we help?</label>
+                    <textarea class="form-control query-box" id="query" rows="5" placeholder="Type your query here please"></textarea>
+                </div>
+                
+                <!-- Location Dropdown -->
+                <div class="mb-5 text-center">
+                    <label for="location" class="form-label visually-hidden">Where are you based?</label>
+                    <select id="location" class="form-select location-select">
+                        <option selected>Where are you based?</option>
+                        <option>Pakistan</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button (Hidden in design, but standard practice) -->
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-dark w-100 visually-hidden">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- 
+        3. FOOTER Placeholder
+        *** Your Footer code will go here later ***
+    -->
+    <footer>
+        <footer>
+
+<a  class="foot-left" href="">Contact us<br></a>
+<p>Retail Stores</p>
+<p>Awards and Badges</p>
+
+<div class="footlogo">
+    <a href="homepage.html"> <img src="images/logo.png"></a>
+</div>
+
+
+<div class="copyright">&copy; Copyrights reserved by Baller's Basket 2025 </div>
+
+
+<div class="foot-right">
+
+<a  href="">Shipping and Deliveries</a>
+<a  href="">Payment</a>
+
+</div>
+
+
+
+</footer>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Optional: Add JavaScript to check if the user is based in Pakistan and log it
+        document.getElementById('location').addEventListener('change', function() {
+            if (this.value === 'Pakistan') {
+                console.log('User selected Pakistan as their location.');
+            }
+        });
+    </script>
+</body>
+</html>
