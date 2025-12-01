@@ -341,21 +341,22 @@ z-index: 10;/*bringing to front*/
 {
     display: flex;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 90px;
     
-    width: 300px;
+    width: 500px;
     height: auto;
     border-radius: 30px;
 }
 
 .moreimage img
 {
-    margin-top: 10px;
+    margin-top: 30px;
     width: 90px;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
     cursor: pointer;
+    
 }
 
 .info
@@ -397,4 +398,65 @@ margin: 10px 0 20px 20px;
 {
 color: #caffb6;
     margin-bottom: 20px;
+}
+
+/*buttons  */
+.buy {
+    width: 260px;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    border: none;
+
+
+}
+.addtocart
+{
+    width: 260px;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+.addtocart{
+    background-color: #000;
+    color: white;
+}
+
+.buy {
+    background-color: #e8e8e8;
+    color: #333;
+}
+
+/* you may like box */
+.suggestions {
+    background-color: #000000;
+    border-radius: 15px ;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    width: 350px ;
+
+    justify-content: center;
+    
+    
+    
+}
+
+.suggestions img {
+    width: 150;
+    height: 150px;
+    object-fit: cover;
+    padding:15px;
+   
+}
+.buttons
+{
+    display: flex;
+    flex-direction: column;
 }
