@@ -24,7 +24,7 @@ body {
   gap: 25px;
 
   display: flex;
-  align-items: center; /controls top bottom axis/
+  align-items: center; /*controls top bottom axis*/
 }
 .navbar li {
   white-space: nowrap; /* about us doesnt split up*/
@@ -38,7 +38,7 @@ body {
 }
 
 .left {
-  display: flex; /line up items auto/
+  display: flex; /*line up items auto*/
   gap: 25px;
   align-items: center;
   padding-left: 15px;
@@ -180,7 +180,7 @@ body {
   }
 }
 
-.right img /targets all img in right container so changes size of icons/ {
+.right img /*targets all img in right container so changes size of icons*/ {
   height: 32px;
 }
 .logo {
@@ -459,4 +459,50 @@ color: #caffb6;
 {
     display: flex;
     flex-direction: column;
+}
+
+/*========================SELLPAGE==============================*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.maincontainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.photosection {
+    margin-bottom: 30px;
+}
+.details-section {
+    margin-bottom: 30px;
+}
+
+.upload{
+    width: 150px;
+    height: 150px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.upload:hover {
+    background-color: #e2e2e2;
+}
+
+.otherphotos {
+    display: flex;
+    justify-content: space-between;
 }
